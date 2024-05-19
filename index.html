@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <div id="container-field-group">
+        <div  id="bmi input"class="container-field">
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="heightunit">Height:</label>
+                </div>
+                <select class="select-group"id="heightunit">
+                    <option value="Feet">Feet</option>
+                    <option value="Inch">Inch</option>
+                    <option value="Meter">Meter</option>
+                    <option selected value="Centimeter">Centimeter</option>
+                </select>
+                <input type="number" id="bmiheight" placeholder="Height"min="0"class="input-feild">
+            </div>
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="Weightunit">Weight:</label>
+        </div>
+        <select class="select-group"id="Weightunit">
+            <option value="Pound">Pound</option>
+            <option selected value="Kg">Kg</option>
+        </select>
+        <input type="number" id="bmiWeight" placeholder="Weight"min="0"class="input-feild">
+            </div>
+        
+    <div class="input-group">
+        
+        <button id="reset-btn" class="btn-reset">Reset</button></br>
+        <button onclick="CalculateBMI()" class="btn-calculate">Calculate BMI</button>
+    </div>
+    </div>
+    <div id="outputinfo" class="output-information-box">
+        <ul>
+            <li>Underweight:<18.5</li>
+            <li>Normal weight:18.5-24.9</li>
+            <li>Overweight:<25-29.9</li>
+            <li>Obesity:<BMI>=30</BMI></li>
+        </ul>
+    </div>
+    <div id="outputresult"class="output-result-box">
+        <h2>Result</h2>
+        <table class="output-table">
+            <tr>
+                <td>BMI Score</td>
+                <td>:</td>
+                <td><span id="bmi result">00</span></td>
+            </tr>
+        </table>
+</div>
+</div>    
+</div>
+   
+   <script src="script.js">
+   
+   </script> 
+</body>
+</html>
